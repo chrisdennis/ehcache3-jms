@@ -1,0 +1,13 @@
+<ehcache:config
+        xmlns:ehcache='http://www.ehcache.org/v3'
+        xmlns:jms='http://www.ehcache.org/jms-replication'>
+    <ehcache:service>
+        <jms:jms-replication/>
+    </ehcache:service>
+
+    <ehcache:cache alias="foo">
+        <ehcache:key-type>java.lang.String</ehcache:key-type>
+        <ehcache:value-type>java.lang.String</ehcache:value-type>
+        <ehcache:heap>100</ehcache:heap>
+    </ehcache:cache>
+</ehcache:config>

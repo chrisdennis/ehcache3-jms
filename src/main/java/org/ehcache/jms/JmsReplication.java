@@ -20,6 +20,10 @@ public class JmsReplication implements Service, CacheManagerListener {
 
   private InternalCacheManager cacheManager;
 
+  public JmsReplication(JmsConfiguration configuration) {
+
+  }
+
   @Override
   public void start(ServiceProvider<Service> serviceProvider) {
     this.cacheManager = serviceProvider.getService(CacheManagerProviderService.class).getCacheManager();

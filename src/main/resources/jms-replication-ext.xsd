@@ -1,0 +1,11 @@
+<xs:schema version="1.0"
+           xmlns:eh="http://www.ehcache.org/v3"
+           xmlns:jms="http://www.ehcache.org/jms-replication"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified"
+           targetNamespace="http://www.ehcache.org/jms-replication">
+
+    <xs:import namespace="http://www.ehcache.org/v3"/>
+
+    <xs:element name="jms-replication" substitutionGroup="eh:service-creation-configuration"/>
+</xs:schema>
